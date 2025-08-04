@@ -10,117 +10,112 @@
 <body>
     <div class="container">
         <!-- Header -->
-        <header class="header">
+        <header class="header" role="banner">
             <div class="header-left">
                 <img src="https://www.careercarve.com/_next/image?url=%2Fcareercarve.png&w=384&q=75" alt="CareerCarve Logo" class="logo">
             </div>
             <div class="header-right">
-                <div class="icon-button">
-                    <i class="fas fa-user"></i>
-                </div>
-                <div class="icon-button">
-                    <i class="fas fa-comments"></i>
-                </div>
-                <div class="icon-button">
-                    <i class="fas fa-bell"></i>
-                </div>
+                <button class="icon-button" aria-label="User profile" tabindex="0">
+                    <i class="fas fa-user" aria-hidden="true"></i>
+                </button>
+                <button class="icon-button" aria-label="Chat messages" tabindex="0">
+                    <i class="fas fa-comments" aria-hidden="true"></i>
+                </button>
             </div>
         </header>
+        
+
 
         <!-- Welcome Section -->
-        <section class="welcome-section">
+        <section class="welcome-section" role="main">
             <h1 class="welcome-text">
-                Welcome! Build your AI powered Resume here →
+                Welcome!<br>
+                Build your AI powered Resume here →
             </h1>
         </section>
 
         <!-- Cards Grid -->
-        <section class="cards-grid">
-            <div class="card" onclick="showComingSoon()">
+        <section class="cards-grid" role="grid" aria-label="Feature cards">
+            <button class="card" onclick="showComingSoon()" role="gridcell" aria-label="Your Projects - Showcase your work">
                 <div class="card-icon">
-                    <i class="fas fa-project-diagram"></i>
+                    <i class="fas fa-project-diagram" aria-hidden="true"></i>
                 </div>
                 <h3 class="card-title">Your Projects</h3>
                 <p class="card-description">Showcase your work</p>
-            </div>
+            </button>
 
-            <div class="card" onclick="showComingSoon()">
+            <button class="card" onclick="showComingSoon()" role="gridcell" aria-label="Resume Discussions - Get feedback and tips">
                 <div class="card-icon">
-                    <i class="fas fa-file-alt"></i>
+                    <i class="fas fa-file-alt" aria-hidden="true"></i>
                 </div>
                 <h3 class="card-title">Resume Discussions</h3>
                 <p class="card-description">Get feedback & tips</p>
-            </div>
+            </button>
 
-            <div class="card" onclick="showComingSoon()">
+            <button class="card" onclick="showComingSoon()" role="gridcell" aria-label="Expert Connect - Connect with professionals">
                 <div class="card-icon">
-                    <i class="fas fa-users"></i>
+                    <i class="fas fa-users" aria-hidden="true"></i>
                 </div>
                 <h3 class="card-title">Expert Connect</h3>
                 <p class="card-description">Connect with professionals</p>
-            </div>
+            </button>
 
-            <div class="card" onclick="showComingSoon()">
+            <button class="card" onclick="showComingSoon()" role="gridcell" aria-label="Daily - Daily insights and tips">
                 <div class="card-icon">
-                    <i class="fas fa-calendar-day"></i>
+                    <i class="fas fa-calendar-day" aria-hidden="true"></i>
                 </div>
                 <h3 class="card-title">Daily</h3>
                 <p class="card-description">Daily insights & tips</p>
-            </div>
+            </button>
 
-            <div class="card" onclick="showComingSoon()">
+            <button class="card" onclick="showComingSoon()" role="gridcell" aria-label="Mentors - Find your mentor">
                 <div class="card-icon">
-                    <i class="fas fa-chalkboard-teacher"></i>
+                    <i class="fas fa-chalkboard-teacher" aria-hidden="true"></i>
                 </div>
                 <h3 class="card-title">Mentors</h3>
                 <p class="card-description">Find your mentor</p>
-            </div>
+            </button>
 
-            <div class="card" onclick="showComingSoon()">
+            <button class="card" onclick="showComingSoon()" role="gridcell" aria-label="Trending Topics - Stay updated">
                 <div class="card-icon">
-                    <i class="fas fa-fire"></i>
+                    <i class="fas fa-fire" aria-hidden="true"></i>
                 </div>
                 <h3 class="card-title">Trending Topics</h3>
                 <p class="card-description">Stay updated</p>
-            </div>
+            </button>
         </section>
 
         <!-- Bottom Navigation -->
-        <nav class="bottom-nav">
-            <div class="nav-item active">
-                <i class="fas fa-home"></i>
-                <span>Homepage</span>
-            </div>
-            <div class="nav-item">
-                <i class="fas fa-calendar"></i>
-                <span>Schedule</span>
-            </div>
-            <div class="nav-item">
-                <i class="fas fa-user-star"></i>
-                <span>Find Mentor</span>
-            </div>
-            <div class="nav-item">
-                <i class="fas fa-lightbulb"></i>
-                <span>Learning Hub</span>
-            </div>
-            <div class="nav-item">
-                <i class="fas fa-microphone"></i>
-                <span>Podcasts</span>
-            </div>
+        <nav class="bottom-nav" role="navigation" aria-label="Main navigation">
+            <button class="nav-item active" aria-label="Homepage" aria-current="page">
+                <i class="fas fa-home" aria-hidden="true"></i>
+            </button>
+            <button class="nav-item" aria-label="Schedule">
+                <i class="fas fa-calendar" aria-hidden="true"></i>
+            </button>
+            <button class="nav-item" aria-label="Notifications">
+                <i class="fas fa-bell" aria-hidden="true"></i>
+            </button>
+            <button class="nav-item" aria-label="Learning Hub">
+                <i class="fas fa-lightbulb" aria-hidden="true"></i>
+            </button>
+            <button class="nav-item" aria-label="Podcasts">
+                <i class="fas fa-microphone" aria-hidden="true"></i>
+            </button>
         </nav>
     </div>
 
     <!-- Coming Soon Modal -->
-    <div id="comingSoonModal" class="modal">
+    <div id="comingSoonModal" class="modal" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-description" aria-hidden="true">
         <div class="modal-content">
             <div class="modal-header">
-                <h2>🚧 Coming Soon! 🚧</h2>
-                <span class="close" onclick="closeModal()">&times;</span>
+                <h2 id="modal-title">🚧 Coming Soon! 🚧</h2>
+                <button class="close" onclick="closeModal()" aria-label="Close modal">&times;</button>
             </div>
             <div class="modal-body">
-                <p>This feature is currently under development. We're working hard to bring you amazing functionality!</p>
+                <p id="modal-description">This feature is currently under development. We're working hard to bring you amazing functionality!</p>
                 <div class="modal-icon">
-                    <i class="fas fa-tools"></i>
+                    <i class="fas fa-tools" aria-hidden="true"></i>
                 </div>
             </div>
             <button class="modal-button" onclick="closeModal()">Got it!</button>
