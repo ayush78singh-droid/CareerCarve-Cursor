@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerCarve - AI Powered Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <img src="https://www.careercarve.com/_next/image?url=%2Fcareercarve.png&w=384&q=75" alt="CareerCarve Logo" class="logo">
+            </div>
+            <div class="header-right">
+                <div class="icon-button">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="icon-button">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <div class="icon-button">
+                    <i class="fas fa-bell"></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- Welcome Section -->
+        <section class="welcome-section">
+            <h1 class="welcome-text">
+                Welcome! Build your AI powered Resume here →
+            </h1>
+        </section>
+
+        <!-- Cards Grid -->
+        <section class="cards-grid">
+            <div class="card" onclick="showComingSoon()">
+                <div class="card-icon">
+                    <i class="fas fa-project-diagram"></i>
+                </div>
+                <h3 class="card-title">Your Projects</h3>
+                <p class="card-description">Showcase your work</p>
+            </div>
+
+            <div class="card" onclick="showComingSoon()">
+                <div class="card-icon">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <h3 class="card-title">Resume Discussions</h3>
+                <p class="card-description">Get feedback & tips</p>
+            </div>
+
+            <div class="card" onclick="showComingSoon()">
+                <div class="card-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3 class="card-title">Expert Connect</h3>
+                <p class="card-description">Connect with professionals</p>
+            </div>
+
+            <div class="card" onclick="showComingSoon()">
+                <div class="card-icon">
+                    <i class="fas fa-calendar-day"></i>
+                </div>
+                <h3 class="card-title">Daily</h3>
+                <p class="card-description">Daily insights & tips</p>
+            </div>
+
+            <div class="card" onclick="showComingSoon()">
+                <div class="card-icon">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <h3 class="card-title">Mentors</h3>
+                <p class="card-description">Find your mentor</p>
+            </div>
+
+            <div class="card" onclick="showComingSoon()">
+                <div class="card-icon">
+                    <i class="fas fa-fire"></i>
+                </div>
+                <h3 class="card-title">Trending Topics</h3>
+                <p class="card-description">Stay updated</p>
+            </div>
+        </section>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+            <div class="nav-item active">
+                <i class="fas fa-home"></i>
+                <span>Homepage</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-calendar"></i>
+                <span>Schedule</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-user-star"></i>
+                <span>Find Mentor</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-lightbulb"></i>
+                <span>Learning Hub</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-microphone"></i>
+                <span>Podcasts</span>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Coming Soon Modal -->
+    <div id="comingSoonModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>🚧 Coming Soon! 🚧</h2>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>This feature is currently under development. We're working hard to bring you amazing functionality!</p>
+                <div class="modal-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+            </div>
+            <button class="modal-button" onclick="closeModal()">Got it!</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
